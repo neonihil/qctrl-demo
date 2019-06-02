@@ -1,0 +1,51 @@
+{% extends "base/skeleton.tpl.html" %}
+
+{% block head %}
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style>
+    body {
+        background: black;
+        color: #D1C9D4;
+        font-family: 'Roboto', sans-serif;
+    }
+    img.logo {
+        display: block;
+        margin: 100px auto;
+    }
+    .main-wrapper {
+        width: 600px;
+        margin: 50px auto;
+        text-align: center;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    a {
+        color: #9246ff;
+    }
+</style>
+
+{% endblock %}
+
+
+{%- block title -%}Q-CTRL API{%- endblock -%}
+
+{% block body %}
+
+<img class="logo" src="/static/qctrl.svg">
+
+<div class="main-wrapper">
+    <h1>Q-CTRL API</h1>
+    <h1>{{package_version}}</h1>
+    <h2>
+        <a href="/api/spec.json">API Specification</a> | <a href="/api/docs">API Documentation</a>
+    </h2>
+    <h2>
+        <a href="/api/pulse">Pulses</a>
+    </h2>
+    <br>
+</div>
+
+
+
+{% endblock %}

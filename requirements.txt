@@ -1,0 +1,14 @@
+git+https://github.com/ultralightweight/sutils.git#egg=sutils
+#sutils
+flask
+flask_debugtoolbar
+flask-apispec==0.7.0
+flask_cors
+apispec==0.39.0
+webargs
+marshmallow
+waitress
+pymongo==3.5.1
+mongoengine
+flask-mongoengine
+marshmallow-mongoengine
